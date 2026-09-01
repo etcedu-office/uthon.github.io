@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ระบบการร้องเรียน - ภาควิชาเทคโนโลยีและสื่อสารการศึกษา</title>
+    <title>ระบบการอุทธรณ์ - ภาควิชาเทคโนโลยีและสื่อสารการศึกษา</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-thai@latest/thai-400-normal.css">
@@ -50,7 +50,7 @@
                 <div class="w-20 h-20 bg-white/20 backdrop-blur rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <i class="fas fa-university text-white text-3xl"></i>
                 </div>
-                <h1 class="text-3xl font-bold text-white mb-2">ระบบการร้องเรียน</h1>
+                <h1 class="text-3xl font-bold text-white mb-2">ระบบการอุทธรณ์</h1>
                 <p class="text-blue-100">ภาควิชาเทคโนโลยีและสื่อสารการศึกษา</p>
                 <p class="text-xs text-blue-200 mt-1">Educational Technology & Communication Complaint System</p>
             </div>
@@ -100,7 +100,7 @@
                         <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg">
                             <i class="fas fa-user-graduate text-white text-2xl"></i>
                         </div>
-                        <h2 class="text-xl font-bold text-gray-800">ผู้ร้องเรียน</h2>
+                        <h2 class="text-xl font-bold text-gray-800">ผู้อุทธรณ์</h2>
                         <p class="text-sm text-gray-500">Student / User Login</p>
                     </div>
 
@@ -116,7 +116,7 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">ชื่อผู้ร้องเรียน</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">ชื่อผู้อุทธรณ์</label>
                             <input type="text" id="userName" placeholder="เช่น สมชาย ใจดี" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
 
@@ -160,7 +160,7 @@
                         <i class="fas fa-university text-lg"></i>
                     </div>
                     <div>
-                        <h2 class="font-bold text-sm">ระบบการร้องเรียน</h2>
+                        <h2 class="font-bold text-sm">ระบบการอุทธรณ์</h2>
                         <p class="text-xs text-blue-200">EdTech Complaint System</p>
                     </div>
                 </div>
@@ -174,10 +174,10 @@
                     <i class="fas fa-th-large w-5"></i> แดชบอร์ด
                 </a>
                 <a href="#" onclick="showSection('newComplaint')" class="sidebar-item flex items-center gap-3 px-5 py-3 text-sm" data-section="newComplaint">
-                    <i class="fas fa-plus-circle w-5"></i> ยื่นเรื่องร้องเรียน
+                    <i class="fas fa-plus-circle w-5"></i> ยื่นเรื่องอุทธรณ์
                 </a>
                 <a href="#" onclick="showSection('myComplaints')" class="sidebar-item flex items-center gap-3 px-5 py-3 text-sm" data-section="myComplaints">
-                    <i class="fas fa-list-alt w-5"></i> เรื่องร้องเรียนของฉัน
+                    <i class="fas fa-list-alt w-5"></i> เรื่องอุทธรณ์ของฉัน
                 </a>
                 <a href="#" onclick="showSection('aiAssistant')" class="sidebar-item flex items-center gap-3 px-5 py-3 text-sm" data-section="aiAssistant">
                     <i class="fas fa-robot w-5"></i> AI ผู้ช่วย
@@ -187,7 +187,7 @@
                     <p class="text-xs text-blue-300 uppercase tracking-wider font-semibold">สำหรับผู้ดูแล</p>
                 </div>
                 <a href="#" onclick="showSection('manageComplaints')" class="sidebar-item admin-only hidden flex items-center gap-3 px-5 py-3 text-sm" data-section="manageComplaints">
-                    <i class="fas fa-tasks w-5"></i> จัดการเรื่องร้องเรียน
+                    <i class="fas fa-tasks w-5"></i> จัดการเรื่องอุทธรณ์
                 </a>
                 <a href="#" onclick="showSection('googleSheetSettings')" class="sidebar-item admin-only hidden flex items-center gap-3 px-5 py-3 text-sm" data-section="googleSheetSettings">
                     <i class="fab fa-google w-5"></i> เชื่อมต่อ Google Sheets
@@ -212,7 +212,7 @@
                     <div class="w-9 h-9 bg-blue-400 rounded-full flex items-center justify-center text-sm font-bold" id="userAvatar">U</div>
                     <div class="flex-1 min-w-0">
                         <p class="text-sm font-medium truncate" id="userNameDisplay">ผู้ใช้</p>
-                        <p class="text-xs text-blue-200 truncate" id="userRoleDisplay">ผู้ร้องเรียน</p>
+                        <p class="text-xs text-blue-200 truncate" id="userRoleDisplay">ผู้อุทธรณ์</p>
                     </div>
                 </div>
                 <button onclick="logout()" class="w-full flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 rounded-lg py-2 text-sm transition-all">
@@ -226,7 +226,7 @@
             <header class="bg-white shadow-sm sticky top-0 z-20 px-6 py-4 flex items-center justify-between">
                 <div>
                     <h1 class="text-xl font-bold text-gray-800" id="pageTitle">แดชบอร์ด</h1>
-                    <p class="text-sm text-gray-500" id="pageSubtitle">ภาพรวมระบบการร้องเรียน</p>
+                    <p class="text-sm text-gray-500" id="pageSubtitle">ภาพรวมระบบการอุทธรณ์</p>
                 </div>
                 <div class="flex items-center gap-4">
                     <button onclick="syncFromGoogleSheet()" class="hidden admin-only-btn p-2 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all" title="Sync จาก Google Sheets">
@@ -250,7 +250,7 @@
                         <div class="bg-white rounded-xl p-5 shadow-sm card-hover border-l-4 border-blue-500">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <p class="text-sm text-gray-500">เรื่องร้องเรียนทั้งหมด</p>
+                                    <p class="text-sm text-gray-500">เรื่องอุทธรณ์ทั้งหมด</p>
                                     <p class="text-3xl font-bold text-gray-800 mt-1" id="statTotal">0</p>
                                 </div>
                                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -296,7 +296,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         <div class="lg:col-span-2 bg-white rounded-xl shadow-sm p-6">
                             <div class="flex items-center justify-between mb-4">
-                                <h3 class="font-bold text-gray-800"><i class="fas fa-history text-blue-600 mr-2"></i>เรื่องร้องเรียนล่าสุด</h3>
+                                <h3 class="font-bold text-gray-800"><i class="fas fa-history text-blue-600 mr-2"></i>เรื่องอุทธรณ์ล่าสุด</h3>
                                 <a href="#" onclick="showSection('myComplaints')" class="text-sm text-blue-600 hover:underline">ดูทั้งหมด →</a>
                             </div>
                             <div class="space-y-3" id="recentComplaints"></div>
@@ -310,7 +310,7 @@
                                     </div>
                                     <div>
                                         <p class="text-sm font-medium text-gray-800">ยื่นเรื่องใหม่</p>
-                                        <p class="text-xs text-gray-500">สร้างเรื่องร้องเรียนใหม่</p>
+                                        <p class="text-xs text-gray-500">สร้างเรื่องอุทธรณ์ใหม่</p>
                                     </div>
                                 </button>
                                 <button onclick="showSection('aiAssistant')" class="w-full flex items-center gap-3 p-3 bg-purple-50 hover:bg-purple-100 rounded-lg transition-all text-left">
@@ -345,7 +345,7 @@
                                     <i class="fas fa-file-alt text-blue-600 text-xl"></i>
                                 </div>
                                 <div>
-                                    <h2 class="text-xl font-bold text-gray-800">ยื่นเรื่องร้องเรียน</h2>
+                                    <h2 class="text-xl font-bold text-gray-800">ยื่นเรื่องอุทธรณ์</h2>
                                     <p class="text-sm text-gray-500">กรุณากรอกรายละเอียดให้ครบถ้วน</p>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@
                             <form id="complaintForm" onsubmit="submitComplaint(event)">
                                 <div class="space-y-5">
                                     <div>
-                                        <label class="block text-sm font-medium text-gray-700 mb-2">ประเภทเรื่องร้องเรียน <span class="text-red-500">*</span></label>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">ประเภทเรื่องอุทธรณ์ <span class="text-red-500">*</span></label>
                                         <select id="complaintType" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
                                             <option value="">-- เลือกประเภท --</option>
                                             <option value="course">ปัญหาเกี่ยวกับรายวิชา/การเรียนการสอน</option>
@@ -405,7 +405,7 @@
 
                                     <div class="flex gap-3 pt-2">
                                         <button type="submit" id="submitBtn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all shadow-sm">
-                                            <i class="fas fa-paper-plane mr-2"></i> ส่งเรื่องร้องเรียน
+                                            <i class="fas fa-paper-plane mr-2"></i> ส่งเรื่องอุทธรณ์
                                         </button>
                                         <button type="button" onclick="showSection('dashboard')" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-all">
                                             ยกเลิก
@@ -421,7 +421,7 @@
                 <section id="section-myComplaints" class="hidden fade-in">
                     <div class="bg-white rounded-xl shadow-sm p-6">
                         <div class="flex items-center justify-between mb-6">
-                            <h3 class="font-bold text-gray-800 text-lg">เรื่องร้องเรียนของฉัน</h3>
+                            <h3 class="font-bold text-gray-800 text-lg">เรื่องอุทธรณ์ของฉัน</h3>
                             <div class="flex gap-2">
                                 <select id="userFilter" onchange="renderMyComplaints()" class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
                                     <option value="all">ทั้งหมด</option>
@@ -448,7 +448,7 @@
                                 </thead>
                                 <tbody id="complaintsTable"></tbody>
                             </table>
-                            <p id="noMyComplaints" class="hidden text-center py-8 text-gray-400"><i class="fas fa-inbox text-3xl mb-2 block"></i>ยังไม่มีเรื่องร้องเรียน</p>
+                            <p id="noMyComplaints" class="hidden text-center py-8 text-gray-400"><i class="fas fa-inbox text-3xl mb-2 block"></i>ยังไม่มีเรื่องอุทธรณ์</p>
                         </div>
                     </div>
                 </section>
@@ -462,7 +462,7 @@
                                     <i class="fas fa-robot text-white"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-gray-800">AI ผู้ช่วยร้องเรียน</h3>
+                                    <h3 class="font-bold text-gray-800">AI ผู้ช่วยร้อุทธรณ์</h3>
                                     <p class="text-xs text-green-500"><i class="fas fa-circle text-xs mr-1"></i>ออนไลน์</p>
                                 </div>
                             </div>
@@ -472,15 +472,15 @@
                                         <i class="fas fa-robot text-purple-600 text-sm"></i>
                                     </div>
                                     <div class="bg-gray-100 rounded-2xl rounded-tl-sm px-4 py-3 max-w-md">
-                                        <p class="text-sm text-gray-700">สวัสดีค่ะ! ฉันคือ AI ผู้ช่วยของระบบร้องเรียนภาควิชาเทคโนโลยีและสื่อสารการศึกษา</p>
+                                        <p class="text-sm text-gray-700">สวัสดีค่ะ! ฉันคือ AI ผู้ช่วยของระบบอุทธรณ์ภาควิชาเทคโนโลยีและสื่อสารการศึกษา</p>
                                         <p class="text-sm text-gray-700 mt-2">ท่านต้องการความช่วยเหลือเรื่องอะไรคะ?</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="p-4 border-t border-gray-200">
                                 <div class="flex gap-2 mb-3">
-                                    <button onclick="sendQuickMessage('ต้องการยื่นเรื่องร้องเรียน')" class="text-xs bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-all">ยื่นเรื่องร้องเรียน</button>
-                                    <button onclick="sendQuickMessage('ตรวจสอบสถานะเรื่องร้องเรียน')" class="text-xs bg-green-50 text-green-700 px-3 py-1.5 rounded-full hover:bg-green-100 transition-all">ตรวจสอบสถานะ</button>
+                                    <button onclick="sendQuickMessage('ต้องการยื่นเรื่องอุทธรณ์')" class="text-xs bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full hover:bg-blue-100 transition-all">ยื่นเรื่องร้องเรียน</button>
+                                    <button onclick="sendQuickMessage('ตรวจสอบสถานะเรื่องอุทธรณ์')" class="text-xs bg-green-50 text-green-700 px-3 py-1.5 rounded-full hover:bg-green-100 transition-all">ตรวจสอบสถานะ</button>
                                     <button onclick="sendQuickMessage('ต้องการปรึกษาปัญหา')" class="text-xs bg-purple-50 text-purple-700 px-3 py-1.5 rounded-full hover:bg-purple-100 transition-all">ปรึกษาปัญหา</button>
                                 </div>
                                 <div class="flex gap-2">
@@ -497,7 +497,7 @@
                             <div class="prompt-box rounded-lg p-4 mb-4">
                                 <p class="text-xs font-semibold text-blue-800 mb-2">📋 Prompt ปัจจุบัน:</p>
                                 <p class="text-xs text-gray-700 leading-relaxed" id="currentPromptDisplay">
-                                    คุณคือผู้ช่วยอัจฉริยะของระบบร้องเรียนภาควิชาเทคโนโลยีและสื่อสารการศึกษา...
+                                    คุณคือผู้ช่วยอัจฉริยะของระบบอุทธรณ์ภาควิชาเทคโนโลยีและสื่อสารการศึกษา...
                                 </p>
                             </div>
                             <div class="space-y-2">
@@ -516,7 +516,7 @@
                 <section id="section-manageComplaints" class="hidden fade-in">
                     <div class="bg-white rounded-xl shadow-sm p-6">
                         <div class="flex items-center justify-between mb-6">
-                            <h3 class="font-bold text-gray-800 text-lg"><i class="fas fa-tasks text-blue-600 mr-2"></i>จัดการเรื่องร้องเรียนทั้งหมด (CRUD)</h3>
+                            <h3 class="font-bold text-gray-800 text-lg"><i class="fas fa-tasks text-blue-600 mr-2"></i>จัดการเรื่องอุทธรณ์ทั้งหมด (CRUD)</h3>
                             <div class="flex gap-2">
                                 <input type="text" id="adminSearch" placeholder="ค้นหา..." oninput="renderAdminComplaints()" class="border border-gray-300 rounded-lg px-3 py-2 text-sm w-48">
                                 <select id="adminFilter" onchange="renderAdminComplaints()" class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
@@ -607,7 +607,7 @@
                                                     <i class="fas fa-copy mr-1"></i> คัดลอก
                                                 </button>
                                                 <pre class="code-block" id="appsScriptCode">/**
- * ระบบร้องเรียน - Google Apps Script Backend
+ * ระบบอุทธรณ์ - Google Apps Script Backend
  * ภาควิชาเทคโนโลยีและสื่อสารการศึกษา
  */
 
@@ -842,7 +842,7 @@ function jsonResponse(obj) {
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-2">บทบาทของ AI (Role)</label>
                                     <select id="aiRole" class="w-full border border-gray-300 rounded-lg px-4 py-3" onchange="updatePromptPreview()">
-                                        <option value="advisor">ที่ปรึกษาการร้องเรียน</option>
+                                        <option value="advisor">ที่ปรึกษาการอุทธรณ์</option>
                                         <option value="classifier">ผู้จำแนกประเภท</option>
                                         <option value="drafter">ผู้ร่างข้อความ</option>
                                         <option value="tracker">ผู้ติดตามสถานะ</option>
@@ -923,7 +923,7 @@ function jsonResponse(obj) {
     <div id="editModal" class="hidden fixed inset-0 z-50 flex items-center justify-center modal-overlay bg-black/50 p-4">
         <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto fade-in">
             <div class="p-6 border-b border-gray-200 flex items-center justify-between sticky top-0 bg-white rounded-t-2xl">
-                <h3 class="text-xl font-bold text-gray-800" id="modalTitle">แก้ไขเรื่องร้องเรียน</h3>
+                <h3 class="text-xl font-bold text-gray-800" id="modalTitle">แก้ไขเรื่องอุทธรณ์</h3>
                 <button onclick="closeEditModal()" class="text-gray-400 hover:text-gray-600">
                     <i class="fas fa-times text-xl"></i>
                 </button>
@@ -931,7 +931,7 @@ function jsonResponse(obj) {
             <form id="editForm" onsubmit="saveEdit(event)" class="p-6 space-y-4">
                 <input type="hidden" id="editId">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">ผู้ร้องเรียน</label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">ผู้อุทธรณ์</label>
                     <input type="text" id="editUser" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500" required>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
@@ -974,7 +974,7 @@ function jsonResponse(obj) {
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">หมายเหตุจาก Admin</label>
-                    <textarea id="editNote" rows="2" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="บันทึกภายใน (ไม่แสดงให้ผู้ร้องเรียนเห็น)"></textarea>
+                    <textarea id="editNote" rows="2" class="w-full border border-gray-300 rounded-lg px-4 py-3" placeholder="บันทึกภายใน (ไม่แสดงให้ผู้อุทธรณ์เห็น)"></textarea>
                 </div>
                 <div class="flex gap-3 pt-2">
                     <button type="submit" id="editSaveBtn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg transition-all">
@@ -992,7 +992,7 @@ function jsonResponse(obj) {
     <div id="viewModal" class="hidden fixed inset-0 z-50 flex items-center justify-center modal-overlay bg-black/50 p-4">
         <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto fade-in">
             <div class="p-6 border-b border-gray-200 flex items-center justify-between sticky top-0 bg-white rounded-t-2xl">
-                <h3 class="text-xl font-bold text-gray-800">รายละเอียดเรื่องร้องเรียน</h3>
+                <h3 class="text-xl font-bold text-gray-800">รายละเอียดเรื่องอุทธรณ์</h3>
                 <button onclick="closeViewModal()" class="text-gray-400 hover:text-gray-600">
                     <i class="fas fa-times text-xl"></i>
                 </button>
@@ -1008,7 +1008,7 @@ function jsonResponse(obj) {
                 <i class="fas fa-trash-alt text-red-600 text-2xl"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-800 mb-2">ยืนยันการลบ</h3>
-            <p class="text-sm text-gray-600 mb-6">ท่านต้องการลบเรื่องร้องเรียน <span id="deleteIdDisplay" class="font-bold text-red-600"></span> ใช่หรือไม่?<br>การดำเนินการนี้ไม่สามารถย้อนกลับได้</p>
+            <p class="text-sm text-gray-600 mb-6">ท่านต้องการลบเรื่องอุทธรณ์ <span id="deleteIdDisplay" class="font-bold text-red-600"></span> ใช่หรือไม่?<br>การดำเนินการนี้ไม่สามารถย้อนกลับได้</p>
             <div class="flex gap-3">
                 <button onclick="confirmDelete()" class="flex-1 bg-red-600 hover:bg-red-700 text-white font-medium py-3 rounded-lg transition-all">
                     <i class="fas fa-trash mr-2"></i> ลบ
@@ -1026,8 +1026,8 @@ function jsonResponse(obj) {
             <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fas fa-check text-green-600 text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2" id="successTitle">ส่งเรื่องร้องเรียนสำเร็จ!</h3>
-            <p class="text-sm text-gray-500 mb-4">รหัสเรื่องร้องเรียน: <span class="font-bold text-blue-600" id="complaintId">CMP-2026-013</span></p>
+            <h3 class="text-xl font-bold text-gray-800 mb-2" id="successTitle">ส่งเรื่องอุทธรณ์สำเร็จ!</h3>
+            <p class="text-sm text-gray-500 mb-4">รหัสเรื่องอุทธรณ์: <span class="font-bold text-blue-600" id="complaintId">CMP-2026-013</span></p>
             <p class="text-sm text-gray-600 mb-6" id="successMessage">ระบบจะดำเนินการภายใน 7 วันทำการ</p>
             <button onclick="closeSuccessModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all font-medium">
                 ตกลง
@@ -1094,7 +1094,7 @@ function jsonResponse(obj) {
         function getDefaultData() {
             counter = 7;
             return [
-                { id: 'CMP-2026-001', user: 'สมชาย ใจดี', userEmail: 'somchai@gmail.com', type: 'course', subject: 'ปัญหาการเข้าเรียนออนไลน์ TEC301', priority: 'high', status: 'pending', date: '2026-07-10', detail: 'ระบบ LMS ไม่สามารถเข้าถึงได้ตั้งแต่สัปดาห์ที่แล้ว', note: '' },
+                { id: 'CMP-2026-001', user: 'ธนดล ใจดี', userEmail: 'somchai@gmail.com', type: 'course', subject: 'ปัญหาการเข้าเรียนออนไลน์ TEC301', priority: 'high', status: 'pending', date: '2026-07-10', detail: 'ระบบ LMS ไม่สามารถเข้าถึงได้ตั้งแต่สัปดาห์ที่แล้ว', note: '' },
                 { id: 'CMP-2026-002', user: 'สมหญิง ดีงาม', userEmail: 'somying@gmail.com', type: 'facility', subject: 'ห้องปฏิบัติการคอมพิวเตอร์เสีย', priority: 'medium', status: 'in-progress', date: '2026-07-08', detail: 'คอมพิวเตอร์ในห้อง Lab 3 เปิดไม่ได้หลายเครื่อง', note: 'แจ้งช่างแล้ว' },
                 { id: 'CMP-2026-003', user: 'สมชาย ใจดี', userEmail: 'somchai@gmail.com', type: 'technology', subject: 'ซอฟต์แวร์ Adobe ไม่อัปเดต', priority: 'low', status: 'resolved', date: '2026-07-05', detail: 'เวอร์ชันซอฟต์แวร์ในห้องตัดต่อเก่ามาก', note: '' },
                 { id: 'CMP-2026-004', user: 'วิชัย รักษ์เรียน', userEmail: 'wichai@gmail.com', type: 'service', subject: 'การตอบกลับช้าจากสำนักงาน', priority: 'medium', status: 'pending', date: '2026-07-11', detail: 'ส่งอีเมลสอบถามเรื่องทะเบียนแต่ไม่ได้รับคำตอบ', note: '' },
@@ -1341,7 +1341,7 @@ function jsonResponse(obj) {
         }
 
         function guestLogin() {
-            const name = document.getElementById('userName').value.trim() || 'ผู้ร้องเรียน';
+            const name = document.getElementById('userName').value.trim() || 'ผู้อุทธรณ์';
             currentUser = { name, email: 'guest@local', role: 'user' };
             enterDashboard();
         }
@@ -1357,7 +1357,7 @@ function jsonResponse(obj) {
             document.getElementById('userNameDisplay').textContent = currentUser.name;
             document.getElementById('topUserName').textContent = currentUser.name;
             document.getElementById('userAvatar').textContent = currentUser.name.charAt(0);
-            document.getElementById('userRoleDisplay').textContent = currentUser.role === 'admin' ? 'ผู้ดูแลระบบ' : 'ผู้ร้องเรียน';
+            document.getElementById('userRoleDisplay').textContent = currentUser.role === 'admin' ? 'ผู้ดูแลระบบ' : 'ผู้อุทธรณ์';
             
             const now = new Date();
             document.getElementById('currentDate').textContent = now.toLocaleDateString('th-TH', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
@@ -1420,7 +1420,7 @@ function jsonResponse(obj) {
             const list = currentUser.role === 'admin' ? complaints.slice(0, 4) : getMyComplaints().slice(0, 4);
             
             if (list.length === 0) {
-                container.innerHTML = '<p class="text-center py-8 text-gray-400"><i class="fas fa-inbox text-3xl mb-2 block"></i>ยังไม่มีเรื่องร้องเรียน</p>';
+                container.innerHTML = '<p class="text-center py-8 text-gray-400"><i class="fas fa-inbox text-3xl mb-2 block"></i>ยังไม่มีเรื่องอุทธรณ์</p>';
                 return;
             }
             
@@ -1552,7 +1552,7 @@ function jsonResponse(obj) {
 
         // ============ CRUD Operations ============
         function openCreateModal() {
-            document.getElementById('modalTitle').textContent = 'สร้างเรื่องร้องเรียนใหม่';
+            document.getElementById('modalTitle').textContent = 'สร้างเรื่องอุทธรณ์ใหม่';
             document.getElementById('editForm').reset();
             document.getElementById('editId').value = '';
             document.getElementById('editUser').value = currentUser.name;
@@ -1562,7 +1562,7 @@ function jsonResponse(obj) {
         function openEditModal(id) {
             const c = complaints.find(x => x.id === id);
             if (!c) return;
-            document.getElementById('modalTitle').textContent = 'แก้ไขเรื่องร้องเรียน';
+            document.getElementById('modalTitle').textContent = 'แก้ไขเรื่องอุทธรณ์';
             document.getElementById('editId').value = c.id;
             document.getElementById('editUser').value = c.user;
             document.getElementById('editType').value = c.type;
@@ -1631,7 +1631,7 @@ function jsonResponse(obj) {
                         showToast('บันทึกในเครื่องแล้ว แต่ sync ล้มเหลว', 'warning');
                     }
                 }
-                showToast('สร้างเรื่องร้องเรียนสำเร็จ', 'success');
+                showToast('สร้างเรื่องอุทธรณ์สำเร็จ', 'success');
             }
 
             saveBtn.innerHTML = originalText;
@@ -1665,7 +1665,7 @@ function jsonResponse(obj) {
                 }
             }
             
-            showToast('ลบเรื่องร้องเรียนสำเร็จ', 'success');
+            showToast('ลบเรื่องอุทธรณ์สำเร็จ', 'success');
             closeDeleteModal();
             renderAll();
         }
@@ -1683,7 +1683,7 @@ function jsonResponse(obj) {
                         <span class="status-badge ${statusLabels[c.status].class}">${statusLabels[c.status].text}</span>
                     </div>
                     <div>
-                        <p class="text-xs text-gray-500">ผู้ร้องเรียน</p>
+                        <p class="text-xs text-gray-500">ผู้อุทธรณ์</p>
                         <p class="font-medium text-gray-800">${c.user}</p>
                         <p class="text-xs text-gray-500">${c.userEmail}</p>
                     </div>
@@ -1775,14 +1775,14 @@ function jsonResponse(obj) {
             if (activeItem) activeItem.classList.add('active');
 
             const titles = {
-                'dashboard': ['แดชบอร์ด', 'ภาพรวมระบบการร้องเรียน'],
-                'newComplaint': ['ยื่นเรื่องร้องเรียน', 'สร้างเรื่องร้องเรียนใหม่'],
-                'myComplaints': ['เรื่องร้องเรียนของฉัน', 'ติดตามและจัดการเรื่องร้องเรียน'],
-                'aiAssistant': ['AI ผู้ช่วย', 'ปรึกษา AI เกี่ยวกับการร้องเรียน'],
-                'manageComplaints': ['จัดการเรื่องร้องเรียน (CRUD)', 'สร้าง แก้ไข ลบ เรื่องร้องเรียนทั้งหมด'],
+                'dashboard': ['แดชบอร์ด', 'ภาพรวมระบบการอุทธรณ์'],
+                'newComplaint': ['ยื่นเรื่องอุทธรณ์', 'สร้างเรื่องอุทธรณ์ใหม่'],
+                'myComplaints': ['เรื่องอุทธรณ์ของฉัน', 'ติดตามและจัดการเรื่องอุทธรณ์'],
+                'aiAssistant': ['AI ผู้ช่วย', 'ปรึกษา AI เกี่ยวกับการอุทธรณ์'],
+                'manageComplaints': ['จัดการเรื่องอุทธรณ์ (CRUD)', 'สร้าง แก้ไข ลบ เรื่องอุทธรณ์ทั้งหมด'],
                 'googleSheetSettings': ['เชื่อมต่อ Google Sheets', 'ตั้งค่าฐานข้อมูลออนไลน์'],
                 'promptManager': ['จัดการ Prompt AI', 'กำหนดบทบาทและคำสั่ง AI'],
-                'reports': ['รายงานสถิติ', 'วิเคราะห์ข้อมูลระบบร้องเรียน']
+                'reports': ['รายงานสถิติ', 'วิเคราะห์ข้อมูลระบบอุทธรณ์']
             };
 
             document.getElementById('pageTitle').textContent = titles[sectionId]?.[0] || '';
@@ -1869,8 +1869,8 @@ function jsonResponse(obj) {
 
         function getAIResponse(msg) {
             const lower = msg.toLowerCase();
-            if (lower.includes('ยื่นเรื่อง') || lower.includes('ร้องเรียน')) {
-                return 'ท่านสามารถยื่นเรื่องร้องเรียนได้โดยไปที่เมนู "ยื่นเรื่องร้องเรียน" ด้านซ้ายมือค่ะ\n\nข้อมูลที่ต้องกรอก:\n1. ประเภทเรื่องร้องเรียน\n2. ระดับความเร่งด่วน\n3. หัวข้อเรื่อง\n4. รายละเอียดปัญหา';
+            if (lower.includes('ยื่นเรื่อง') || lower.includes('อุทธรณ์')) {
+                return 'ท่านสามารถยื่นเรื่องอุทธรณ์ได้โดยไปที่เมนู "ยื่นเรื่องอุทธรณ์" ด้านซ้ายมือค่ะ\n\nข้อมูลที่ต้องกรอก:\n1. ประเภทเรื่องอุทธรณ์\n2. ระดับความเร่งด่วน\n3. หัวข้อเรื่อง\n4. รายละเอียดปัญหา';
             } else if (lower.includes('สถานะ') || lower.includes('ติดตาม')) {
                 const my = getMyComplaints();
                 const pending = my.filter(c => c.status === 'pending').length;
@@ -1888,18 +1888,18 @@ function jsonResponse(obj) {
             const role = document.getElementById('aiRole')?.value || 'full';
             const tone = document.querySelector('input[name="tone"]:checked')?.value || 'formal';
 
-            const roleDesc = { 'advisor': 'ที่ปรึกษาการร้องเรียน', 'classifier': 'ผู้จำแนกประเภท', 'drafter': 'ผู้ร่างข้อความ', 'tracker': 'ผู้ติดตามสถานะ', 'full': 'ผู้ช่วยครบวงจร' };
+            const roleDesc = { 'advisor': 'ที่ปรึกษาการอุทธรณ์', 'classifier': 'ผู้จำแนกประเภท', 'drafter': 'ผู้ร่างข้อความ', 'tracker': 'ผู้ติดตามสถานะ', 'full': 'ผู้ช่วยครบวงจร' };
             const toneDesc = { 'formal': 'ใช้ภาษาทางการ สุภาพ ให้เกียรติ', 'friendly': 'ใช้ภาษาที่เป็นกันเอง อบอุ่น', 'empathetic': 'แสดงความเห็นอกเห็นใจ', 'professional': 'ใช้ภาษา professionnel กระชับ ชัดเจน' };
 
-            const prompt = `# System Prompt - ระบบร้องเรียน
+            const prompt = `# System Prompt - ระบบอุทธรณ์
 ## บทบาท
 คุณคือ "${roleDesc[role]}" ของภาควิชาเทคโนโลยีและสื่อสารการศึกษา
 
 ## ภารกิจ
-- ให้คำแนะนำเกี่ยวกับการยื่นเรื่องร้องเรียน
-- ช่วยจำแนกประเภทเรื่องร้องเรียน
+- ให้คำแนะนำเกี่ยวกับการยื่นเรื่องอุทธรณ์
+- ช่วยจำแนกประเภทเรื่องอุทธรณ์
 - ให้ข้อมูลขั้นตอนและระยะเวลา (ปกติ 7 วัน, เร่งด่วน 3 วัน)
-- ติดตามสถานะเรื่องร้องเรียน
+- ติดตามสถานะเรื่องอุทธรณ์
 
 ## น้ำเสียง
 ${toneDesc[tone]}
